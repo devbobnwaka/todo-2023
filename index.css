@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    font-weight: light;
+}
+
+body{
+    background-color: rgb(247, 236, 236);   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    width: 600px;
+    background-color: rgb(248, 250, 250);
+}
+
+.background-1{
+    height: 100px;
+    background-color: rgb(132, 69, 190);
+    color: white;
+    text-align: center;
+}
+
+.br-1{
+    border-radius: 20px;
+}
+
+.brt-2{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.content-container{
+    width: 90%;
+    margin: auto;
+    position: relative;
+    top: -50px;
+
+}
+
+form, .todo-section{
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 1px 3px 10px rgb(218, 212, 212);
+}
+form{
+    text-align: center;
+    height: 110px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.todo-header{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(216, 208, 208);
+}
+
+.todo-list{
+    display: inline-block;
+    width: 50%;
+    margin-right: 5px;
+}
+
+.todo-status{
+    display: inline-block;
+    width: 25%;
+}
+
+.todo-close{
+    display: inline-block;
+    width: 20%;
+}
+
+.todo-row{
+    padding: 10px;
+}
+
+.todos button{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.todos button:hover{
+    cursor: pointer;
+    box-shadow: 4px 3px 2px rgba(224, 171, 171, 0.459);
+    opacity: .5;
+}
+
+.status{
+    background-color: cadetblue;
+    color: white;
+}
+
+.completed{
+    background-color: rgb(64, 90, 13);
+}
+
+/* .completed{
+    background-color: cadetblue;
+} */
+
+.delete{
+    background-color: crimson;
+    color: white;
+}
+
+.todos:not(:last-child){
+    border-bottom: 1px solid gray;
+}
+
+input{
+    border-bottom: 1px solid gray;
+    display: block;
+    padding: 10px;
+    width: 300px;
+    margin: auto;
+}
+
+input:focus{
+    outline: none;
+}
+
+.add{
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    background-color: rgb(221, 88, 113);
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.add:hover{
+    background-color: crimson;
+    cursor: pointer;
+}
